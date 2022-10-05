@@ -20,6 +20,18 @@
   <script src="https://npmcdn.com/@turf/turf/turf.min.js"></script>
   <link rel="stylesheet" href="css/main.css" type="text/css">
   <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+  <style>
+    /* allow scroll zoom to work when cursor over popup */
+    .mapboxgl-popup,
+    .mapboxgl-popup-content {
+      pointer-events: none;
+    }
+
+    /* re-enable X close button to accept pointer events */
+    .mapboxgl-popup-close-button {
+      pointer-events: all;
+    }
+  </style>
 </head>
 
 <body>
