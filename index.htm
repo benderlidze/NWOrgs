@@ -201,7 +201,8 @@
           });
 
           if (event.result.place_type && event.result.place_type.includes("region")) {
-            const region = event.result.text_en
+            console.log('event.result', event.result);
+            const region = event.result.text
             console.log('region', region);
 
             const filtered = stores.features
